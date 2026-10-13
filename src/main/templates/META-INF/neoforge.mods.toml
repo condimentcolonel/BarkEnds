@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+#issueTrackerURL="https://github.com/condimentcolonel/barkends/issues"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+#displayURL="https://modrinth.com/mod/bark-ends"
+logoFile="icon.png"
+authors="condimentcolonel"
+# Server-side only: players can join a server running Bark Ends without installing it,
+# so their server list should not mark it as incompatible.
+displayTest="IGNORE_SERVER_VERSION"
+description='''
+Trees grow with bark on their ends. Wherever a log's cut end would show (the top of a
+trunk, the tip of a branch), it becomes the all-bark wood block instead, so trees look
+like trees. Works on every tree from every mod, in new chunks and from saplings.
+Part of the Condiment Colonel mod family.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
